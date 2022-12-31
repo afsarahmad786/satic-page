@@ -1,0 +1,220 @@
+header ul {
+  display: flex;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  list-style-type: none;
+  border-bottom: 0.1rem solid white;
+  top: 0%;
+  background: black;
+  width: 100%;
+}
+header h1 {
+  padding: 40px;
+  font-size: 100px;
+}
+header li {
+  margin: 0px 40px;
+}
+header li a {
+  text-decoration: none;
+  color: white;
+}
+header ul a {
+  color: white;
+  text-decoration: none;
+}
+header {
+  text-align: center;
+
+  background: #777;
+  color: white;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+#cnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#cnt div {
+  margin: 30px;
+}
+#cnt div h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+#cnt .detail {
+  display: flex;
+  margin: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+#cnt .shop-item-button {
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4%;
+  background: #56ccf2;
+}
+#cnt .shop-item-button:hover,
+#mcnt .shop-item-button:hover {
+  background: #0eabdf;
+}
+
+footer {
+  display: flex;
+  margin-top: 40px;
+  padding: 20px;
+  background: #56ccf2;
+}
+footer .footer-title {
+  text-align: center;
+  color: white;
+  width: 50%;
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+footer .footer-icons {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer-icons ul {
+  list-style-type: none;
+  display: flex;
+}
+.footer-icons li {
+  padding: 10px;
+  margin: 0px 20px;
+}
+.footer-icons li:hover {
+  background: rgb(17, 206, 206);
+}
+.footer-icons img {
+  width: 30px;
+}
+
+.shop-item-button:hover,
+#mcnt .shop-item-button:hover {
+  background: #0eabdf;
+}
+#mcnt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#mcnt div {
+  margin: 30px;
+}
+#mcnt div h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+#mcnt .prod-details {
+  display: flex;
+  margin: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+#mcnt .shop-item-button {
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 4%;
+  background: #56ccf2;
+}
+.btn {
+  background: #56ccf2;
+}
+#message {
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  position: -webkit-sticky;
+  position: sticky !important;
+}
+
+.msgg {
+  height: 100px;
+  justify-content: center;
+  width: 30%;
+  background: #56ccf2;
+}
+
+#di {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  border: 3px solid #73ad21;
+}
+#about img {
+  float: left;
+  margin: 20px 50px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+header .latest {
+  display: block;
+  border: 1px solid #56ccf2;
+  padding: 15px 30px;
+  font-size: 23px;
+  font-weight: 200;
+  margin: 10px auto;
+  background: inherit;
+  cursor: pointer;
+  color: white;
+}
+header .play-btn {
+  cursor: pointer;
+  display: block;
+  border: 2px solid #56ccf2;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 200;
+  margin: 20px auto;
+  background: inherit;
+  color: #56ccf2;
+}
+#tours .tour-item {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-inline: 20px;
+  padding: 10px;
+}
+#tours .tour-item .buy-btn {
+  width: 20%;
+  background: #56ccf2;
+  color: white;
+  border: none;
+  padding: 7px;
+  padding-left: 30px;
+  margin-left: 30px;
+  font-weight: 700;
+}
+.tour-item span {
+  padding-inline: 30px;
+}

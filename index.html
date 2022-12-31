@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title>E Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="index.html">STORE</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <a href="#cart" class="cart-holder"
+          >cart<span class="cart-cnt">&nbsp;<sup id="cart1">0</sup> </span></a
+        >
+      </ul>
+      <h1>The Generics</h1>
+    </header>
+
+    <div id="btn2">
+      <section class="container">
+        <h2>MUSIC</h2>
+        <div id="cnt">
+          <div>
+            <h3>Album 1</h3>
+            <img src="/img/Album 1.png" alt="" />
+            <div class="detail">
+              <span>$12.99</span>
+              <button class="btn" id="Album1" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div>
+            <h3>Album 2</h3>
+            <img src="/img/Album 2.png" alt="" />
+            <div class="detail">
+              <span>$14.99</span>
+              <button class="btn" id="Album2" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div>
+            <h3>Album 3</h3>
+            <img src="/img/Album 3.png" alt="" />
+            <div class="detail">
+              <span>$9.99</span>
+              <button class="btn" id="Album3" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div>
+            <h3>Album 4</h3>
+            <img src="/img/Album 4.png" alt="" />
+            <div class="detail">
+              <span>$19.99</span>
+              <button class="btn" id="Album4" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container">
+        <h2>MERCH</h2>
+        <div id="mcnt">
+          <div>
+            <h3>T-Shirt</h3>
+            <img src="/img/Shirt.png" alt="" />
+            <div class="detail">
+              <span>$19.99</span>
+              <button class="btn" id="Shirt" type="button">ADD TO CART</button>
+            </div>
+          </div>
+          <div>
+            <h3>Coffee Cup</h3>
+            <img src="/img/Cofee.png" alt="" />
+            <div class="detail">
+              <span>$6.99</span>
+              <button class="btn" id="Coffee" type="button">ADD TO CART</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="msgg" id="di">
+        <span id="message"></span>
+      </div>
+      <footer>
+        <div class="footer-title">The Generics</div>
+        <div class="footer-icons">
+          <ul>
+            <li>
+              <a href="https://www.youtube.com">
+                <img src="/img/6260efc8fc9a9002669d2f4ad9956cc0.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://spotify.com">
+                <img src="./img/spt.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com">
+                <img src="./img/fb.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.getElementById("di").style.visibility = "hidden";
+      var cn = 1;
+      btn2.addEventListener("click", (event) => {
+        const id = event.target.id;
+        const msg = document.getElementById("message");
+
+        msg.innerHTML = "Product added to the Cart " + id;
+
+        document.getElementById("di").style.visibility = "visible";
+        let c = countt();
+        console.log(c);
+        $(".msgg").fadeToggle(2000);
+        $(".msgg").hide(2000);
+        function countt() {
+          return cn++;
+        }
+        document.getElementById("cart1").innerHTML = c;
+      });
+    </script>
+  </body>
+</html>
